@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chaos-room
+    runtime: docker
+    plan: 0.5c-512mb
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    numInstances: 1
+    healthCheckPath: /health
